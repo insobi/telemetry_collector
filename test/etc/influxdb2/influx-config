@@ -1,0 +1,5 @@
+[default]
+  url = "http://0.0.0.0:8086"
+  token = "helloworld"
+  org = "Cisco"
+  active = true

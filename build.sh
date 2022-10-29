@@ -9,7 +9,7 @@ export CURRENT_UID=`id -u`
 export CURRENT_GID=`id -g`
 
 export TELEGRAF_IMAGE="telegraf:latest"
-export INFLUXDB_IMAGE="influxdb:2.0.8"
+export INFLUXDB_IMAGE="influxdb:2.4.0"
 export GRAFANA_IMAGE="grafana/grafana:8.1.2"
 
 export INFLUXDB_USER="influxdb"

@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  devcontainer:
+    # image: insobi/devcontainer:iac-20211230
+    # image: insobi/devcontainer:iac-20220113   # Terraform v1.1.3, aci v1.2.0
+    image: insobi/devcontainer:20220323     # Terraform v1.1.7, aci v2.1.0
+    
+    volumes:
+      - ..:/workspace:cached
+      - ./credentials.tfrc.json:/tmp/.terraform.d/credentials.tfrc.json
+      # - ./openssl.cnf:/etc/ssl/openssl.cnf
+
+    command: /bin/sh -c "cp -r /tmp/.terraform.d/credentials.tfrc.json /root/.terraform.d/ && while sleep 1000; do :; done"
